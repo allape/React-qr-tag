@@ -1,0 +1,45 @@
+// for against the default dark mode
+$baseColor: black;
+
+.wrapper {
+  .paper {
+    overflow: hidden;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    .table {
+      width: 100%;
+      border-collapse: collapse;
+      table-layout: fixed;
+      .tagCol {
+        .tag {
+          padding: 0;
+          border: 2px solid $baseColor;
+          justify-content: flex-start;
+          align-items: center;
+          .contentWrapper {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            .qrCode {
+              padding: 5px;
+              border-right: 2px solid $baseColor;
+              display: flex;
+              & > img {
+                height: 100px;
+              }
+            }
+            .name {
+              padding: 10px;
+              flex: 1;
+              text-align: left;
+              font-size: 20px;
+              color: $baseColor;
+            }
+          }
+        }
+      }
+    }
+  }
+}
